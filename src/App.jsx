@@ -48,15 +48,20 @@ import * as React from 'react';
        ]
        console.log('App component is rendered. This renders only on first rendering of the App')
 
-       //this is state of the searchTerm refactored. It used to be in SearchComponent
+       //This is lifting the state out of Search component
+       //this is state of the searchTerm refactored. It used to be in 
+       //SearchComponent - 
        const [searchTerm, setSearchTerm] = React.useState('');
 
-       //this is the callback handler. It receives the value that was passed by the 
+       //Lifting the this function. it used to be in the Search Component
+       //this is the callback handler. It receives the value that 
+       //was passed by the 
        //Search component whenever the user types something in the Search component.
        //For example when you type Tochi in the search input field the target.value "Tochi"
        //is passed to this callback handler
        const handleSearch = (event) => {
-          setSearchTerm(event.target.value); //store the value in the state updater function - setSearchTerm.
+          setSearchTerm(event.target.value); //tell the state updater 
+                               //function setSearchTerm to update searchTerm.
           console.log('Value of data passed to parent component named App via  Callback Handler is = ' + event.target.value);
       };
 
@@ -112,7 +117,7 @@ import * as React from 'react';
     )
   };
   
-
+  //List component
   //Instantiate Item component and using"map", instantiate "Item"
   //component" and pass each record to Item component as "props". 
   //item={item} means access of the record (item) and 
@@ -125,8 +130,11 @@ import * as React from 'react';
          </ul>
         
      );
-           
-  //Create another component that will display list of stories. This component called "Item" encapsulates the task of displaying each stories' record
+   
+  //Item Component   
+  //Create another component that will display list of stories. 
+  //This component called "Item" encapsulates the task of displaying 
+  //each stories' record
   const Item = (props) => (
     
     <li>

@@ -1,3 +1,5 @@
+    Special Note: 
+     For using ESLint go to: https://app.pluralsight.com/ilx/video-courses/f4ccfaf2-29f8-416e-bb5d-34664ca1f136/1b527686-e150-4c3a-8690-6d7eea1f0bbb/5528f1ea-3a46-4d3f-b8aa-700de290951b
  
   1. Stuff from Robin's course 
       - instantiation of app.jsx happens in main.jsx. See p45
